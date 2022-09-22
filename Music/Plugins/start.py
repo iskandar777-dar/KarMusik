@@ -43,10 +43,10 @@ def start_pannel():
             InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"),
         ],
         [
-            InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅ​ 📚", url="https://telegra.ph/%F0%9D%99%BA%F0%9D%99%B0%F0%9D%9A%81%F0%9D%99%BC%F0%9D%9A%84%F0%9D%9A%82%F0%9D%99%B8%F0%9D%99%BA-06-25"),
+            InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅ​ 📚", url="https://telegra.ph/file/827af7c833f5e671b1076.jpg"),
         ],
         [
-            InlineKeyboardButton("🌐 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🌐", url="https://github.com/ArmanGG01/KarMusik"),
+            InlineKeyboardButton("🌐 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🌐", url="https://github.com/iskandar777-dar/KarMusik"),
         ],
     ]
     return (
@@ -66,10 +66,10 @@ pstart_markup = InlineKeyboardMarkup(
             InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"),
         ],
         [
-            InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅ ​📚", url="https://telegra.ph/%F0%9D%99%BA%F0%9D%99%B0%F0%9D%9A%81%F0%9D%99%BC%F0%9D%9A%84%F0%9D%9A%82%F0%9D%99%B8%F0%9D%99%BA-06-25"),
+            InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅ ​📚", url="https://telegra.ph/file/827af7c833f5e671b1076.jpg"),
         ],
         [
-            InlineKeyboardButton("🌐 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🌐", url="https://github.com/ArmanGG01/KarMusik"),
+            InlineKeyboardButton("🌐 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🌐", url="https://github.com/iskandar777-dar/KarMusik"),
         ],
     ]
 )
@@ -141,6 +141,7 @@ async def play(_, message: Message):
 **✨ Selamat Datang {rpk}!
 
 💬 [{BOT_NAME}](tg://user?id=2129034376) memungkinkan anda untuk memutar musik pada grup melalui obrolan suara yang baru di Telegram!
+☕️ 𝐌𝐚𝐧𝐚𝐠𝐞 𝐛𝐲 : @Scurytii ☕️
 
 💡 Untuk Mengetahui Semua Perintah Bot Dan Bagaimana Cara Kerja Nya Dengan Menekan Tombol » 📚 ᴄᴏᴍᴍᴀɴᴅ​!**
 
