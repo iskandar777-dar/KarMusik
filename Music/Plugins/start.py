@@ -36,43 +36,8 @@ from pyrogram.types import (
 )
 
 
-def start_pannel():
-    buttons = [
-        [
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url=f"https://t.me/{GROUP}"),
-            InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"),
-        ],
-        [
-            InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅ​ 📚", url="https://telegra.ph/file/827af7c833f5e671b1076.jpg"),
-        ],
-        [
-            InlineKeyboardButton("🌐 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🌐", url="https://github.com/iskandar777-dar/KarMusik"),
-        ],
-    ]
-    return (
-        "🎛 **{BOT_NAME} Merupakan salah satu dari bot telegram yang bisa memutar musik di grup**",
-        buttons,
-    )
-
-
-pstart_markup = InlineKeyboardMarkup(
-    [
-        [
-            InlineKeyboardButton(
-                "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
-        ],
-        [
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url=f"https://t.me/{GROUP}"),
-            InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"),
-        ],
-        [
-            InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅ ​📚", url="https://telegra.ph/file/827af7c833f5e671b1076.jpg"),
-        ],
-        [
-            InlineKeyboardButton("🌐 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🌐", url="https://github.com/iskandar777-dar/KarMusik"),
-        ],
-    ]
-)
+def start_pannel() : ()
+    
 welcome_captcha_group = 2
 
 
@@ -137,15 +102,7 @@ async def play(_, message: Message):
         rpk = "[" + user_name + "](tg://user?id=" + str(user_id) + ")"
         await app.send_message(
             message.chat.id,
-            text=f"""
-**✨ Selamat Datang {rpk}!
 
-💬 [{BOT_NAME}](tg://user?id=2129034376) memungkinkan anda untuk memutar musik pada grup melalui obrolan suara yang baru di Telegram!
-☕️ 𝐌𝐚𝐧𝐚𝐠𝐞 𝐛𝐲 : @Scurytii ☕️
-
-💡 Untuk Mengetahui Semua Perintah Bot Dan Bagaimana Cara Kerja Nya Dengan Menekan Tombol » 📚 ᴄᴏᴍᴍᴀɴᴅ​!**
-
-""",
             parse_mode="markdown",
             reply_markup=pstart_markup,
             reply_to_message_id=message.message_id,
